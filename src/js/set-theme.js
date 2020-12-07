@@ -1,5 +1,4 @@
 import refs from "./refs.js"
-console.log(refs);
 
 const Theme = {
   LIGHT: 'light-theme',
@@ -7,12 +6,10 @@ const Theme = {
 };
 
 const onDarkTheme = () => {
-  refs.bodyRef.classList.remove(Theme.LIGHT);
-  refs.bodyRef.classList.add(Theme.DARK);
+  refs.bodyRef.className = Theme.DARK
 };
 const onLightTheme = () => {
-  refs.bodyRef.classList.remove(Theme.DARK);
-  refs.bodyRef.classList.add(Theme.LIGHT);
+  refs.bodyRef.className = Theme.LIGHT
 };
 
 refs.checkboxReference.checked =
